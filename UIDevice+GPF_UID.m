@@ -33,7 +33,7 @@
 
 - (NSString *)installIdentifier
 {
-	static NSString * const kInstallIdentifierKey = @"UIDevice+UDID_installIdentifier";
+	static NSString * const kInstallIdentifierKey = @"UIDevice+GPF_UID_installIdentifier";
 	
 	/* Check for previously generated identifier */
 	NSString *installIdentifier = [[NSUserDefaults standardUserDefaults] objectForKey:kInstallIdentifierKey];
