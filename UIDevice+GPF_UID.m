@@ -45,7 +45,7 @@
 	CFRelease(uuidRef);
 	
 	/* Toll-free bridge */
-	installIdentifier = [NSString stringWithString:(NSString *)stringRef];
+	installIdentifier = [NSString stringWithString:(__bridge NSString *)stringRef];
 	CFRelease(stringRef);
 	
 	[[NSUserDefaults standardUserDefaults] setObject:installIdentifier forKey:kInstallIdentifierKey];

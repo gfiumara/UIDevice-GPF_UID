@@ -22,3 +22,6 @@ How do I use it?
 4. Consider replacing all calls to `uniqueIdentifier` with calls to
 `installIdentifier`.
 
+Does this use Objective-C ARC?
+------------------------------
+Yes.  s/__bridge\ //g to not use ARC, or check out commit c79ed7265102f0d1b48bd7baf230a27cd358f40e.
